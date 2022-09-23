@@ -1,0 +1,35 @@
+@import 'vars';
+
+a {
+  color: var(--grey);
+}
+a:hover {
+  border-bottom: 1.5px solid var(--grey);
+  color: var(--dark-grey);
+}
+
+.DesktopMenu .sign-out {
+  color: var(--green);
+}
+.DesktopMenu .sign-out:hover {
+  border-bottom: 1.5px solid var(--green);
+  color: var(--dark-green);
+}
+.DesktopMenu-container {
+  position: absolute;
+  margin: 0;
+  border: 1px solid var(--light-grey);
+  border-radius: 0 0 16px 16px;
+  padding: 20px 0;
+  width: auto;
+  height: auto;
+  background-color: var(--white);
+  z-index: 4;
+}
+.DesktopMenu-container {
+  top: 58.5px;
+  right: 64px;
+  width: 200px;
+  display: grid;
+  place-items: center;
+}
