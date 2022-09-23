@@ -1,0 +1,39 @@
+@import 'vars';
+
+.ProductDetail {
+  position: absolute;
+  top: -1.5px;
+  right: 0;
+  border: 1px solid var(--light-grey);
+  border-radius: 0 0 16px 16px;
+  padding-bottom: 24px;
+  width: 30vw;
+  background-color: var(--white);
+}
+.ProductDetail-info {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+}
+.primary-button {
+  place-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  width: auto;
+  height: 40px;
+  font-size: var(--md);
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--green);
+  cursor: pointer;
+}
+.primary-button:hover {
+  background-color: var(--dark-green);
+}
+#add-to-cart-button {
+  justify-content: space-evenly;
+  padding: 0 8px;
+  width: 168px;
+}
