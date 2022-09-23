@@ -23,7 +23,12 @@ const useGetProducts = () => {
 			alert(error);
 		}
 	};
-
+  products.forEach(product => {
+    const url = product.images[0];
+    if(url === '' || !url.includes('https://')) {
+      product.images[0] = 'https://images.pexels.com/photos/5420864/pexels-photo-5420864.jpeg?auto=compress&cs=tinysrgb&w=1200';
+    }
+  });
   return products;
 };
 

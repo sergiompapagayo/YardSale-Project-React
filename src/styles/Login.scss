@@ -1,6 +1,6 @@
 @import 'vars';
 
-.Login-container {
+.Login {
   position: absolute;
   top: 60px;
   display: grid;
@@ -64,7 +64,7 @@
 .Login-form__input:not(:placeholder-shown) ~ .Login-form__line{
   transform: scale(1);
 }
-#login-button {
+#Login-button {
   justify-self: center;
   width: 120px;
 }

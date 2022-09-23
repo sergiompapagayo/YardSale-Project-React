@@ -6,6 +6,7 @@ import '@styles/ProductList.scss';
 
 const ProductList = () => {
 	const products = useGetProducts();
+	console.log(products)
 	return (
     <main className="main-container">
       <section className="ProductList">
