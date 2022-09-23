@@ -1,0 +1,128 @@
+@import 'vars';
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--light-grey);
+  padding: 0 24px;
+  width: 100vw;
+  height: 48px;
+}
+.menu-icon {
+  visibility: hidden;
+}
+.menu-icon {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 5;
+}
+.menu-icon:hover .line{
+  background-color: var(--dark-green);
+  cursor: pointer;
+}
+.menu-icon .line {
+  position: absolute;
+  border-radius: 4px;
+  width: 24px;
+  height: 3px;
+  background-color: var(--dark-grey);
+  transition: all .3s ease-in-out;
+}
+.menu-icon .line:nth-child(1) {
+  transform: translateY(-8px);
+}
+.menu-icon .line:nth-child(3) {
+  transform: translateY(8px);
+}
+.menu-icon.open .line:nth-child(1) {
+  transform: rotate(45deg);
+  background-color: var(--dark-green);
+}
+.menu-icon.open .line:nth-child(2) {
+  background: transparent;
+}
+.menu-icon.open .line:nth-child(3) {
+  transform: rotate(-45deg);
+  background-color: var(--dark-green);
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+.navbar ul li {
+  padding: 0 8px;
+}
+.yardsale-logo {
+  position: absolute;
+  left: calc(50% - 72.75px);
+  top: calc(30px - 17px);
+}
+.navbar__right-group {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar__right-group a {
+  height: 24px;
+  color: var(--green);
+}
+.navbar .navbar__right-group a:hover {
+  border-bottom: 1.5px solid var(--green);
+  color: var(--dark-green);
+}
+.login,
+.user-email {
+  visibility: visible;
+}
+.shopping-cart-icon {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+.shopping-cart-icon div{
+  position: absolute;
+  top: -4px;
+  left: 24px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  color: var(--dark-green);
+  background-color: var(--background);
+  text-align: center;
+}
+
+.desktopMenu__categories {
+  border-bottom: 2px solid var(--light-grey);
+  padding-left: 24px;
+  height: 32px;
+  visibility: visible;
+}
+.desktopMenu__categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    height: 60px;
+  }
+  .menu-icon {
+    visibility: visible;
+  }
+  .login,
+  .user-email,
+  .desktopMenu__categories {
+    visibility: hidden;
+  }
+}
