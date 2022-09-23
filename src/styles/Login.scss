@@ -1,0 +1,117 @@
+@import 'vars';
+
+.Login-container {
+  position: absolute;
+  top: 60px;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--white);
+  overflow: hidden;
+}
+.Login-form {
+  display: grid;
+  justify-content: center;
+}
+.Login-form div{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.Login-form__input {
+  border: none;
+  border-bottom: 1px solid var(--light-grey);
+  height: 30px;
+  width: 280px;
+  font-size: var(--md);
+  color: var(--dark-grey);
+  background-color: inherit;
+  z-index: 2;
+  outline: none;
+}
+.Login-form__label {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  font-size: var(--md);
+  color: var(--grey);
+  font-weight: bold;
+  cursor: text;
+  transition: transform 0.5s, color 0.3s;
+  z-index: 1;
+}
+.Login-form__line{
+  position: absolute;
+  top: 29px;
+  width: 280px;
+  height: 1.5px;
+  background-color: var(--green);
+  transform: scale(0);
+  transition: transform 0.5s;
+  z-index: 100;
+}
+.Login-form__input:focus + .Login-form__label,
+.Login-form__input:not(:placeholder-shown) + .Login-form__label
+{
+  transform: translateY(-24px) scale(.95);
+  transform-origin: left top;
+  color: var(--dark-green);
+}
+.Login-form__input:focus ~ .Login-form__line,
+.Login-form__input:not(:placeholder-shown) ~ .Login-form__line{
+  transform: scale(1);
+}
+#login-button {
+  justify-self: center;
+  width: 120px;
+}
+.primary-button {
+  place-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  width: auto;
+  height: 40px;
+  font-size: var(--md);
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--green);
+  cursor: pointer;
+}
+.primary-button:hover {
+  background-color: var(--dark-green);
+}
+.forgot-password {
+  justify-self: center;
+  margin: 16px 0;
+  font-size: var(--sm);
+  color: var(--green);
+  text-decoration: none;
+}
+.forgot-password:hover {
+  border-bottom: 1px solid var(--green);
+  color: var(--green);
+  font-weight: bold;
+}
+.secondary-button {
+  justify-self: center;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 2px solid var(--dark-green);
+  width: 120px;
+  height: 40px;
+  font-size: var(--md);
+  font-weight: bold;
+  color: var(--dark-green);
+  background-color: var(--white);
+  cursor: pointer;
+}
+.secondary-button:hover {
+  color: var(--white);
+  background-color: var(--light-green);
+}
