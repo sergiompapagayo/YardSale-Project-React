@@ -1,0 +1,93 @@
+@import 'vars';
+
+.MyAccount {
+  position: absolute;
+  padding-bottom: 24px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+}
+.MyAccount-container {
+  display: grid;
+  place-content: center;
+  margin-top: 60px;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+}
+.MyAccount-container__title {
+  margin: 4px 4px 32px 4px;
+  font-size: var(--lg);
+  color: var(--dark-grey);
+  text-align: start;
+}
+.MyAccount-form {
+  display: grid;
+  padding-left: 12px;
+}
+.MyAccount-form__label {
+  margin-bottom: 4px;
+  font-size: var(--md);
+  font-weight: bold;
+  color: var(--dark-grey);
+}
+.MyAccount-form__value,
+.MyAccount-form__input {
+  height: 30px;
+  width: 300px;
+  font-size: var(--md);
+  color: var(--grey);
+}
+.MyAccount-form__value {
+  margin-bottom: 4px;
+}
+.MyAccount-form__input {
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 8px;
+  padding: 6px;
+  outline: none;
+  background-color: var(--background);
+}
+.MyAccount-form__input:focus {
+  background-color: var(--light-green);
+  box-shadow:0 1px 6px rgba(32,33,36,.28);
+}
+#edit-button {
+  justify-self: center;
+  width: 120px;
+}
+.primary-button {
+  place-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+  width: auto;
+  height: 40px;
+  font-size: var(--md);
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--green);
+  cursor: pointer;
+}
+.primary-button:hover {
+  background-color: var(--dark-green);
+}
+.secondary-button {
+  justify-self: center;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 2px solid var(--dark-green);
+  width: 120px;
+  height: 40px;
+  font-size: var(--md);
+  font-weight: bold;
+  color: var(--dark-green);
+  background-color: var(--white);
+  cursor: pointer;
+}
+.secondary-button:hover {
+  color: var(--white);
+  background-color: var(--light-green);
+}
