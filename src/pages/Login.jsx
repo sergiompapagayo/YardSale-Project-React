@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import '../styles/Login.scss';
+import '@styles/Login.scss';
 
 const Login = () => {
   const form = useRef(null);
@@ -27,7 +27,7 @@ const Login = () => {
           <label htmlFor="password" className="Login-form__label">Password</label>
           <span className="Login-form__line"></span>
         </div>
-        <button 
+        <button
           className="primary-button" id="Login-button"
           onClick={handleSubmit}>
           Log in
