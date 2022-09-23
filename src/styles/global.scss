@@ -12,7 +12,7 @@ a {
   margin: 4px;
   padding-top: 4px;
   padding: 0 6px;
-  color: var(--green);
+  color: var(--grey);
   text-decoration: none;
   cursor: pointer;
   transition: all 280ms ease-in-out;
@@ -20,7 +20,7 @@ a {
 }
 a:hover {
   font-weight: bold;
-  border-bottom: 1.5px solid var(--green);
-  color: var(--dark-green);
+  border-bottom: 1.5px solid var(--dark-grey);
+  color: var(--dark-grey);
   letter-spacing: 1.5px;
 }
