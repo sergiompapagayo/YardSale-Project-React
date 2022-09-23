@@ -26,3 +26,5 @@ const useGetProducts = () => {
 
   return products;
 };
+
+export default useGetProducts;

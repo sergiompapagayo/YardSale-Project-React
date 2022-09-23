@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  margin: 4px;
+  padding-top: 4px;
+  padding: 0 6px;
+  color: var(--green);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 280ms ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+a:hover {
+  font-weight: bold;
+  border-bottom: 1.5px solid var(--green);
+  color: var(--dark-green);
+  letter-spacing: 1.5px;
+}
