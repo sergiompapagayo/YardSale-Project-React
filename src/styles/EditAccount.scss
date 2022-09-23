@@ -1,0 +1,71 @@
+@import 'vars';
+
+.EditAccount {
+  position: absolute;
+  padding-bottom: 24px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white);
+}
+.EditAccount-container {
+  display: grid;
+  place-content: center;
+  margin-top: 60px;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+}
+.title {
+  margin: 4px 4px 32px 4px;
+  font-size: var(--lg);
+  color: var(--dark-grey);
+  text-align: start;
+}
+.EditAccount-form {
+  display: grid;
+  padding-left: 12px;
+}
+.EditAccount-form__label {
+  margin-bottom: 4px;
+  font-size: var(--md);
+  font-weight: bold;
+  color: var(--dark-grey);
+}
+.EditAccount-form__value,
+.EditAccount-form__input {
+  height: 30px;
+  width: 300px;
+  font-size: var(--md);
+  color: var(--grey);
+}
+.EditAccount-form__value {
+  margin-bottom: 4px;
+}
+.EditAccount-form__input {
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 8px;
+  padding: 6px;
+  outline: none;
+  background-color: var(--background);
+}
+.EditAccount-form__input:focus {
+  background-color: var(--light-green);
+  box-shadow:0 1px 6px rgba(32,33,36,.28);
+}
+.secondary-button {
+  justify-self: center;
+  margin: 20px 0;
+  border-radius: 8px;
+  border: 2px solid var(--dark-green);
+  width: 120px;
+  height: 40px;
+  font-size: var(--md);
+  font-weight: bold;
+  color: var(--dark-green);
+  background-color: var(--white);
+  cursor: pointer;
+}
+.secondary-button:hover {
+  color: var(--white);
+  background-color: var(--light-green);
+}
