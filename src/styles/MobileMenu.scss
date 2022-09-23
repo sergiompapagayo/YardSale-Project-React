@@ -1,0 +1,36 @@
+@import 'vars';
+
+.MobileMenu__login a,
+.MobileMenu .sign-out,
+.MobileMenu .email {
+  color: var(--green);
+}
+.MobileMenu .email {
+  font-size: var(--sm);
+}
+.MobileMenu__login a:hover,
+.MobileMenu .sign-out:hover,
+.MobileMenu .email:hover {
+  border-bottom: 1.5px solid var(--green);
+  color: var(--dark-green);
+}
+
+.MobileMenu {
+  position: absolute;
+  margin: 0;
+  border: 1px solid var(--light-grey);
+  border-radius: 0 0 16px 16px;
+  padding: 20px 0;
+  width: auto;
+  height: 60vh;
+  background-color: var(--white);
+  z-index: 100;
+}
+.MobileMenu {
+  top: 58.5px;
+  padding-left: 48px;
+}
+.MobileMenu p,
+.MobileMenu__categories {
+  margin-left: 12px;
+}
