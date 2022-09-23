@@ -1,0 +1,9 @@
+.ProductList {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 25vw));
+  place-content: center;
+  padding: 24px 8px;
+  gap: 26px;
+  width: 100vw;
+}
