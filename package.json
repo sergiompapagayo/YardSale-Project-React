@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/sergiompapagayo/YardSale-Project-React/issues"
   },
-  "homepage": "https://github.com/sergiompapagayo/YardSale-Project-React#readme",
+  "homepage": "https://sergiompapagayo.github.io/YardSale-Project-React/",
   "dependencies": {
     "@babel/core": "^7.19.1",
     "@babel/plugin-transform-runtime": "^7.19.1",
